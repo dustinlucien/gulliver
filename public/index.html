@@ -4,6 +4,8 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js" type="text/javascript"></script>
 
+    <script src="/javascripts/json2.js" type="text/javascript"></script>
+
     <script src="/javascripts/slidedeck.jquery.js" type="text/javascript"></script>
     
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>   
@@ -25,6 +27,18 @@
     <script type="text/javascript">
       // We call .transloadit() after the DOM is initialized:
       $(document).ready(function() {
+
+        var transloadit_template = 
+        { 
+          "auth": {
+            "key" : "5c401cf7904c4cdc8b48db53c9cc584b"
+          },
+          "template_id" : "0e6af30323774be5b44f8be3dd4b42cc",
+          "redirect_url" : "http://localhost:3000/success"
+        };
+        
+        var transloadit_template_escaped = JSON.stringify(transloadit_template);
+        
         $('#photo_upload').transloadit();
       });
       
@@ -41,35 +55,33 @@
       <h1>Get Your Passport Photo Here</h1>
       <div id="tabs">
       	<ul>
-      		<li><a href="#tabs-1">Do It Yourself</a></li>
-      		<li><a href="#tabs-2">Let Us Do It For You</a></li>
-      		<li><a href="#tabs-3">In a Rush?</a></li>
+      		<li><a href="#tabs-1">Do It Yourself <br/> save time and money</a></li>
+      		<li><a href="#tabs-2">Let Us Do It For You <br/> we'll make sure they're done right</a></li>
+      		<li><a href="#tabs-3">In a Rush? <br/> have your photos in hand ASAP</a></li>
       	</ul>
       	<div id="tabs-1">
       		<p>We haven't finished building our completely DIY photo editor, but until then, if you'd like us to email you a perfectly laid out 4x5 image ready for printing, just follow the instructions below.</p>
           <div>
             <form id="photo_upload" action="http://api2.transloadit.com/assemblies" enctype="multipart/form-data" method="POST"> 
-              <input type="hidden" name="params" value="{&quot;auth&quot;:{&quot;key&quot;:&quot;5c401cf7904c4cdc8b48db53c9cc584b&quot;},&quot;template_id&quot;:&quot;0e6af30323774be5b44f8be3dd4b42cc&quot;,&quot;redirect_url&quot;:&quot;http://localhost:3000/checkout&quot;}" /> 
               <input type="file" name="imagefile"> 
               <input type="submit" value="Upload Photo"> 
             </form>
           </div>      		
       	</div>
       	<div id="tabs-2">
-      		<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+      		<p>Why put up with long lines or terrible photos that you have to live with for 10 years?  Take the photo yourself, follow our instructions, and upload you're photo here.  We'll take care of the rest and deliver a printed photo directly to you.</p>
       	</div>
       	<div id="tabs-3">
-      		<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-      		<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+      	  <p></p>
       	</div>
       </div>
             
       <!--Slidedeck Pro form setup-->
       <div id="slidedeck-frame" class="skin-slidedeck">
   			<dl class="slidedeck">
-  				<dt>Slide 1</dt>
+  				<dt>The problem</dt>
   				<dd>Slide content</dd>
-  				<dt>Slide 2</dt>
+  				<dt>Look good</dt>
   				<dd>
             <ul class="slidesVertical">
                 <li><p><strong>Vertical Slide 1</strong></p></li>
@@ -79,11 +91,11 @@
                 <li><p><strong>Vertical Slide 5</strong></p></li>
             </ul>
   				</dd>
-  				<dt>Slide 3</dt>
+  				<dt>iPhone</dt>
   				<dd>Slide content</dd>
-  				<dt>Slide 4</dt>
+  				<dt>Guidelines</dt>
   				<dd>Slide content</dd>
-  				<dt>Slide 5</dt>
+  				<dt>Pricing</dt>
   				<dd>Slide content</dd>
   			</dl>
   		</div>
