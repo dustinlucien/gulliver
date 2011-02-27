@@ -22,32 +22,15 @@
         }        
     </style>
     
-    
-    <script type="text/javascript" src="//assets.transloadit.com/js/jquery.transloadit2.js"></script>
     <script type="text/javascript">
-      // We call .transloadit() after the DOM is initialized:
-      $(document).ready(function() {
-
-        var transloadit_template = 
-        { 
-          "auth": {
-            "key" : "5c401cf7904c4cdc8b48db53c9cc584b"
-          },
-          "template_id" : "0e6af30323774be5b44f8be3dd4b42cc",
-          "redirect_url" : "http://localhost:3000/success"
-        };
-        
-        var transloadit_template_escaped = JSON.stringify(transloadit_template);
-        
-        $('#photo_upload').transloadit();
-      });
-      
+    
       $(document).ready(function() {
         $("#tabs").tabs({selected: 1});
       });
       
     </script>
     
+    <script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
     <title>Passport Photos, Visa Photos, and ID Card Photos Formatted, Verified, and Delivered to You</title>
   </head>
   <body>
@@ -62,17 +45,20 @@
       	<div id="tabs-1">
       		<p>We haven't finished building our completely DIY photo editor, but until then, if you'd like us to email you a perfectly laid out 4x5 image ready for printing, just follow the instructions below.</p>
           <div>
-            <form id="photo_upload" action="http://api2.transloadit.com/assemblies" enctype="multipart/form-data" method="POST"> 
-              <input type="file" name="imagefile"> 
-              <input type="submit" value="Upload Photo"> 
-            </form>
+            <a href="/purchase-diy-passport-photos.html">Upload your photo here</a>
           </div>      		
       	</div>
       	<div id="tabs-2">
       		<p>Why put up with long lines or terrible photos that you have to live with for 10 years?  Take the photo yourself, follow our instructions, and upload you're photo here.  We'll take care of the rest and deliver a printed photo directly to you.</p>
+      	  <div>
+            <a href="/purchase-verified-passport-photos.html">Upload your photo here</a>
+          </div>
       	</div>
       	<div id="tabs-3">
       	  <p></p>
+      	  <div>
+            <a href="/purchase-expedited-passport-photos.html">Upload your photo here</a>
+          </div>
       	</div>
       </div>
             
