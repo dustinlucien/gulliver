@@ -9,7 +9,7 @@
 
     <script src="/javascripts/slidedeck.jquery.js" type="text/javascript"></script>
     
-    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>   
+    <!--<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/> --> 
     <link href="/stylesheets/slidedeck.skin.css" rel="stylesheet" type="text/css" media="screen,handheld" />
     <!-- CSS reset -->
     <link href="/stylesheets/reset.css" rel="stylesheet" type="text/css" />
@@ -67,12 +67,14 @@
         <h2>Get Your Passport Photo Here</h2>
       </div>
       <div id="tabs">
-      	<ul id="nav">
-      		<li id="first"><a href="#tabs-1"><strong>Do It Yourself</strong> <br/> save time and money</a></li>
-      		<li id="middle"><a href="#tabs-2"><strong>Let Us Do It For You</strong> <br/> we'll make sure they're done right</a></li>
-      		<li id="last"><a href="#tabs-3"><strong>In a Rush?</strong> <br/> have your photos in hand ASAP</a></li>
-      	</ul>
-      	<br style="clear: both;"/>
+        <div id="tabs-nav-container">
+        	<ul id="tabs-nav">
+        		<li id="first"><a href="#tabs-1"><strong>Do It Yourself</strong> <br/> save time and money</a></li>
+        		<li id="middle"><a href="#tabs-2"><strong>Let Us Do It For You</strong> <br/> we'll make sure they're done right</a></li>
+        		<li id="last"><a href="#tabs-3"><strong>In a Rush?</strong> <br/> have your photos in hand ASAP</a></li>
+        	</ul>
+        	<br style="clear: both;"/>
+      	</div>
       	<div class="tab-content" id="tabs-1"><br style="clear: both;" />
       		<p>We'll email you a perfectly laid out 4x5 image ready for printing</p>
           <div>
@@ -82,7 +84,8 @@
                 'userName':'getpassportphotos', 
                 'formHash':'z7x4a3', 
                 'autoResize':false,
-                'height':'346', 
+                'scrolling':false,
+                'height':'300', 
                 'ssl':false});
               z7x4a3.display();
             </script>
@@ -97,7 +100,8 @@
                 'userName':'getpassportphotos', 
                 'formHash':'q7x3s5', 
                 'autoResize':false,
-                'height':'489', 
+                'scrolling':false,
+                'height':'300', 
                 'ssl':false});
               q7x3s5.display();
             </script>
@@ -111,7 +115,8 @@
               'userName':'getpassportphotos', 
               'formHash':'r7x3q1', 
               'autoResize':false,
-              'height':'601', 
+              'scrolling':false,
+              'height':'300', 
               'ssl':false});
             r7x3q1.display();
           </script>

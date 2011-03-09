@@ -13,12 +13,17 @@ body {
 Layout
 ******************/
 
+#headline {
+	clear: both;	
+}
+
 #container {
 	width: 640px;
 	margin-left: auto;
 	margin-right: auto;
 }
-.tab-content {
+
+div.ui-tabs-panel {
 	-moz-border-radius-topleft: 0px;
   -moz-border-radius-topright: 0px;
   -moz-border-radius-bottomright: 10px;
@@ -36,10 +41,7 @@ Layout
 	padding: 40px;
 }
 
-#headline {
-	clear: both;	
-}
-
+div.ui-tabs .ui-tabs-hide { display: none !important; }
 /******************
 Type
 ******************/
@@ -75,7 +77,7 @@ p {
 Navigation
 ******************/
 
-div#tabs {
+div#tabs-nav-container {
 	display: block;
 	-moz-border-radius-topleft: 10px;
 	border-top-left-radius: 10px;
@@ -87,7 +89,7 @@ div#tabs {
 	background-color: #ff1a00;
 	clear: both;
 }
-ul#nav li {
+ul#tabs-nav li {
 	float: left;
 	font-size: 10px;
 	-moz-border-radius-topleft: 10px;
@@ -95,7 +97,7 @@ ul#nav li {
 	-moz-border-radius-topright: 10px;
 	border-top-right-radius: 10px;
 }
-ul#nav li a {
+ul#tabs-nav li a {
 	display: block;
 	width: 193px;
 	text-align: center;
@@ -104,14 +106,14 @@ ul#nav li a {
 	padding: 10px;
 	height: 50px;
 }
-ul#nav li.ui-state-hover a {
+ul#tabs-nav li.ui-state-hover a {
 	background: #C40000; /* old browsers */
 	background: #FF1A00; /* old browsers */
 	background: -moz-linear-gradient(top, #FF1A00 13%, #770000 100%); /* firefox */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(13%, #FF1A00), color-stop(100%, #770000)); /* webkit */
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF1A00', endColorstr='#770000', GradientType=0 ); /* ie */
 }
-ul#nav li.ui-state-active a {
+ul#tabs-nav li.ui-state-active a {
 	background: #FFFFFF; /* old browsers */
 	background: -moz-linear-gradient(top, #FFFFFF 0%, #fff 100%); /* firefox */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFFFFF), color-stop(100%, #fff)); /* webkit */
@@ -130,24 +132,21 @@ ul#nav li.ui-state-active a {
 
 
 
-ul#nav li#last a {
+ul#tabs-nav li#last a {
 	width: 194px;
 	-moz-border-radius-topright: 10px;
 	border-top-right-radius: 10px;
 }
-ul#nav li#first a {
+ul#tabs-nav li#first a {
 	-moz-border-radius-topleft: 10px;
 	border-top-left-radius: 10px;
 }
-ul#nav li a strong {
+ul#tabs-nav li a strong {
 	text-transform: uppercase;
 	display: block;
 	margin-bottom: 10px;
 	font-size: 14px;
 }
-
-
-
 
 form {
 	margin-top: 20px;
