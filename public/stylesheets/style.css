@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: #6ecff6;
+	background-image: url(../images/body_background.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	height: 100%;
+}
+/******************
+Layout
+******************/
+
+#container {
+	width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.tab-content {
+	-moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+	background: -moz-linear-gradient(top, #fff 0%, #BFDCEB 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #BFDCEB));
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#BFDCEB', GradientType=0 );
+	-webkit-box-shadow: 0px 0px 10px #000000;
+	-moz-box-shadow: 0px 0px 10px #000000;
+	box-shadow: 0px 0px 10px #000000;
+	padding: 40px;
+}
+
+#headline {
+	clear: both;	
+}
+
+/******************
+Type
+******************/
+
+h1 {
+	text-shadow: 2px 2px 3px #666;
+	filter: dropshadow(color=#666, offx=2, offy=2);
+	font-size: 24px;
+	color: #3b5b8f;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	float: left;	
+}
+
+h2 {
+	font-size: 18px;
+  float: right;
+  position: relative;
+  top: 24px;
+}
+
+a {
+	text-decoration: none;
+	color: #3b5b8f;
+}
+
+p {
+	line-height: 20px;
+	margin-bottom: 20px;	
+}
+
+/******************
+Navigation
+******************/
+
+div#tabs {
+	display: block;
+	-moz-border-radius-topleft: 10px;
+	border-top-left-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-right-radius: 10px;
+	-webkit-box-shadow: 0px 0px 10px #000000;
+	-moz-box-shadow: 0px 0px 10px #000000;
+	box-shadow: 0px 0px 10px #000000;
+	background-color: #ff1a00;
+	clear: both;
+}
+ul#nav li {
+	float: left;
+	font-size: 10px;
+	-moz-border-radius-topleft: 10px;
+	border-top-left-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-right-radius: 10px;
+}
+ul#nav li a {
+	display: block;
+	width: 193px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+	height: 50px;
+}
+ul#nav li.ui-state-hover a {
+	background: #C40000; /* old browsers */
+	background: #FF1A00; /* old browsers */
+	background: -moz-linear-gradient(top, #FF1A00 13%, #770000 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(13%, #FF1A00), color-stop(100%, #770000)); /* webkit */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF1A00', endColorstr='#770000', GradientType=0 ); /* ie */
+}
+ul#nav li.ui-state-active a {
+	background: #FFFFFF; /* old browsers */
+	background: -moz-linear-gradient(top, #FFFFFF 0%, #fff 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFFFFF), color-stop(100%, #fff)); /* webkit */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#fff', GradientType=0 ); /* ie */
+	color: #666;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+/* IE doesn't support selectors so can't do last-child */
+
+
+
+ul#nav li#last a {
+	width: 194px;
+	-moz-border-radius-topright: 10px;
+	border-top-right-radius: 10px;
+}
+ul#nav li#first a {
+	-moz-border-radius-topleft: 10px;
+	border-top-left-radius: 10px;
+}
+ul#nav li a strong {
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+
+
+
+form {
+	margin-top: 20px;
+}
+
+
+input.field { 
+	border: 1px solid #ccc;
+	color: #999;
+	font: inherit;
+	padding: 4px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width: 45%;
+}
+input.field:focus, input.focused { border-color: #000; color: #333; }
+	

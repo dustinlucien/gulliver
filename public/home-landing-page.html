@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js" type="text/javascript"></script>
 
@@ -10,11 +11,37 @@
     
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>   
     <link href="/stylesheets/slidedeck.skin.css" rel="stylesheet" type="text/css" media="screen,handheld" />
+    <!-- CSS reset -->
+    <link href="/stylesheets/reset.css" rel="stylesheet" type="text/css" />
+    <!-- Screen -->
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
+
     <!-- Styles for the skin that only load for Internet Explorer -->
     <!--[if IE]>
     <link rel="stylesheet" type="text/css" href="slidedeck.skin.ie.css" media="screen,handheld" />
     <![endif]-->
-    
+
+    <script type="text/javascript">
+    	$(document).ready(function() {
+    	$('input[title]').each(function() {
+    		if($(this).val() === '') {
+    			$(this).val($(this).attr('title'));	
+    		}
+
+    		$(this).focus(function() {
+    			if($(this).val() == $(this).attr('title')) {
+    				$(this).val('').addClass('focused');	
+    			}
+    		});
+    		$(this).blur(function() {
+    			if($(this).val() === '') {
+    				$(this).val($(this).attr('title')).removeClass('focused');	
+    			}
+    		});
+    	});
+    });
+    </script>
+        
     <style type="text/css">
         #slidedeck-frame {
             width: 800px;
@@ -34,31 +61,60 @@
     <title>Passport Photos, Visa Photos, and ID Card Photos Formatted, Verified, and Delivered to You</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Get Your Passport Photo Here</h1>
+    <div id="container">
+      <div id="headline">
+        <h1>[GetPassportPhotos.com]</h1>
+        <h2>Get Your Passport Photo Here</h2>
+      </div>
       <div id="tabs">
-      	<ul>
-      		<li><a href="#tabs-1">Do It Yourself <br/> save time and money</a></li>
-      		<li><a href="#tabs-2">Let Us Do It For You <br/> we'll make sure they're done right</a></li>
-      		<li><a href="#tabs-3">In a Rush? <br/> have your photos in hand ASAP</a></li>
+      	<ul id="nav">
+      		<li id="first"><a href="#tabs-1"><strong>Do It Yourself</strong> <br/> save time and money</a></li>
+      		<li id="middle"><a href="#tabs-2"><strong>Let Us Do It For You</strong> <br/> we'll make sure they're done right</a></li>
+      		<li id="last"><a href="#tabs-3"><strong>In a Rush?</strong> <br/> have your photos in hand ASAP</a></li>
       	</ul>
-      	<div id="tabs-1">
+      	<br style="clear: both;"/>
+      	<div class="tab-content" id="tabs-1"><br style="clear: both;" />
       		<p>We'll email you a perfectly laid out 4x5 image ready for printing</p>
           <div>
-            <a href="/purchase-diy-passport-photos.html">Upload your photo here</a>
+            <script type="text/javascript">
+              var z7x4a3 = new WufooForm();
+              z7x4a3.initialize({
+                'userName':'getpassportphotos', 
+                'formHash':'z7x4a3', 
+                'autoResize':false,
+                'height':'346', 
+                'ssl':false});
+              z7x4a3.display();
+            </script>
           </div>      		
       	</div>
-      	<div id="tabs-2">
+      	<div class="tab-content" id="tabs-2"><br style="clear: both;" />
       		<p>We'll verify and print the photo and deliver it directly to you.</p>
       	  <div>
-            <a href="/purchase-verified-passport-photos.html">Upload photo</a>
+            <script type="text/javascript">
+              var q7x3s5 = new WufooForm();
+              q7x3s5.initialize({
+                'userName':'getpassportphotos', 
+                'formHash':'q7x3s5', 
+                'autoResize':false,
+                'height':'489', 
+                'ssl':false});
+              q7x3s5.display();
+            </script>
           </div>
       	</div>
-      	<div id="tabs-3">
+      	<div class="tab-content" id="tabs-3"><br style="clear: both;" />
       	  <p>Need your photo in a hurry?  We'll turn it around in under 24 hours</p>
-      	  <div>
-            <a href="/purchase-expedited-passport-photos.html">Upload photo</a>
-          </div>
+          <script type="text/javascript">
+            var r7x3q1 = new WufooForm();
+            r7x3q1.initialize({
+              'userName':'getpassportphotos', 
+              'formHash':'r7x3q1', 
+              'autoResize':false,
+              'height':'601', 
+              'ssl':false});
+            r7x3q1.display();
+          </script>
       	</div>
       </div>
             
@@ -105,8 +161,6 @@
                 <li><p><strong>Clothing: Normal street clothes.</strong></p></li>
             </ul>
   				</dd>
-  				<dt>Supported Formats</dt>
-  				<dd>Slide content</dd>
   				<dt>Pricing</dt>
   				<dd>Slide content</dd>
   			</dl>
