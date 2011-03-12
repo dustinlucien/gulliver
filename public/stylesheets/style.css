@@ -21,6 +21,7 @@ Layout
 	width: 640px;
 	margin-left: auto;
 	margin-right: auto;
+	overflow-x: hidden;
 }
 
 div.ui-tabs-panel {
@@ -53,14 +54,12 @@ h1 {
 	color: #3b5b8f;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	float: left;	
 }
 
 h2 {
 	font-size: 18px;
-  float: right;
-  position: relative;
   top: 24px;
+  margin-bottom: 20px;
 }
 
 a {
@@ -164,4 +163,12 @@ input.field {
 	width: 45%;
 }
 input.field:focus, input.focused { border-color: #000; color: #333; }
-	
+
+.skin-slidedeck p {
+	margin-bottom: 10px;
+}
+
+.skin-slidedeck h3 {
+	font-size: 18px;
+	margin-bottom: 20px;
+}

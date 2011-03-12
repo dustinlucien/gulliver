@@ -23,6 +23,7 @@ Tags: flexible, white, black, multi-color
     -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
+
 /*
  * The SlideDeck element itself.
  * 
@@ -31,7 +32,7 @@ Tags: flexible, white, black, multi-color
  */
 .skin-slidedeck dl.slidedeck {
     position: relative;
-	width: 100%;
+	width: 590px;
 	height: 100%;
 	margin: 0;
     padding: 0;
@@ -63,7 +64,9 @@ Tags: flexible, white, black, multi-color
     margin: 0;
 	border-right: 5px solid #d7d7d7;
 	background: url('/images/slides.png') bottom left #d7d7d7;    /* Note: you should position the background with pixel measurements in IE7 as it improperly calculates the height of the DD element when containing vertical slides */
-    overflow: hidden;
+
+	-webkit-box-shadow: 0px 0px 10px #000000;
+  overflow: hidden;
 }
 
 /*
@@ -92,17 +95,22 @@ Tags: flexible, white, black, multi-color
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	background: url('/images/spines.png') top left #d7d7d7;
-	color: #505050;
+	color: #e5e5e5;
     margin: 0;
     padding: 0;
+    background-color: #FF1A00;
+    background: -moz-linear-gradient(top, #FF1A00 13%, #770000 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(13%, #FF1A00), color-stop(100%, #770000)); /* webkit */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF1A00', endColorstr='#770000', GradientType=0 ); /* ie */
 }
 
 /*
  * The hovered state of a SlideDeck spine.
  */
 .skin-slidedeck dl.slidedeck dt.spine:hover {
-	color: #000;
+	color: #fff;
 	background-position: center left;
+		
 }
 
 /*
@@ -113,6 +121,8 @@ Tags: flexible, white, black, multi-color
 	cursor: default;
 	color: #fff;
 	background-position: bottom left;
+	
+	
 }
 
 /*
@@ -133,7 +143,7 @@ Tags: flexible, white, black, multi-color
 /*
  * The hovered state of a SlideDeck spine index label.
  */
-.skin-slidedeck dl.slidedeck dt.spine:hover .index { color: #000000; }
+.skin-slidedeck dl.slidedeck dt.spine:hover .index { color: #fff; }
 
 /*
  * The active state of a SlideDeck spine index label.
