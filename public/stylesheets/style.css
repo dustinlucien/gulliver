@@ -17,13 +17,6 @@ Layout
 	clear: both;	
 }
 
-#container {
-	width: 640px;
-	margin-left: auto;
-	margin-right: auto;
-	overflow-x: hidden;
-}
-
 div.ui-tabs-panel {
 	-moz-border-radius-topleft: 0px;
   -moz-border-radius-topright: 0px;
@@ -43,6 +36,8 @@ div.ui-tabs-panel {
 }
 
 div.ui-tabs .ui-tabs-hide { display: none !important; }
+
+div.ui-tabs li {list-style-type: none; margin: 0; }
 /******************
 Type
 ******************/
@@ -78,15 +73,16 @@ Navigation
 
 div.ui-tabs {
 	display: block;
-	-moz-border-radius-topleft: 10px;
-	border-top-left-radius: 10px;
-	-moz-border-radius-topright: 10px;
-	border-top-right-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
 	-webkit-box-shadow: 0px 0px 10px #000000;
 	-moz-box-shadow: 0px 0px 10px #000000;
 	box-shadow: 0px 0px 10px #000000;
 	background-color: #ff1a00;
 	clear: both;
+	
+
 }
 
 ul.ui-tabs-nav li {
@@ -99,8 +95,8 @@ ul.ui-tabs-nav li {
 }
 ul.ui-tabs-nav li a {
 	display: block;
-	width: 193px;
-	text-align: center;
+	width: 204px;
+	
 	text-decoration: none;
 	color: #fff;
 	padding: 10px;
@@ -133,7 +129,6 @@ ul.ui-tabs-nav li.ui-state-active a {
 
 
 ul.ui-tabs-nav li#last a {
-	width: 194px;
 	-moz-border-radius-topright: 10px;
 	border-top-right-radius: 10px;
 }
@@ -147,6 +142,42 @@ ul.ui-tabs-nav li a strong {
 	margin-bottom: 10px;
 	font-size: 14px;
 }
+
+div#tabs ul li em {
+	display: block;
+	border-radius: 120px;
+	position: relative;
+	color: #666;
+
+	top: -50px;
+	left: 175px;
+	font-weight: normal;
+
+	font-style: normal;
+	padding: 0px;
+
+	text-align: center;
+	font-size: 8px;
+	background-color: #fff;
+	width: 30px;
+	height: 14px;
+	padding-top: 12px;
+	padding-bottom: 10px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+ul.ui-tabs-nav li.ui-state-active em {
+	display: hidden;
+}
+
+div#tabs ul li em span {
+	font-size: 6px;
+	position: relative;
+	top: -2px;
+}
+
+
 
 form {
 	margin-top: 20px;
@@ -171,4 +202,56 @@ input.field:focus, input.focused { border-color: #000; color: #333; }
 .skin-slidedeck h3 {
 	font-size: 18px;
 	margin-bottom: 20px;
+}
+
+ul#footer {
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  moz-border-radius: 10px;
+  margin-top: 20px;
+	background: -moz-linear-gradient(top, #fff 0%, #BFDCEB 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #BFDCEB));
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#BFDCEB', GradientType=0 );
+	padding: 20px;
+	-webkit-box-shadow: 0px 0px 10px #000000;
+	-moz-box-shadow: 0px 0px 10px #000000;
+	box-shadow: 0px 0px 10px #000000;
+}
+
+ul#footer li {list-style-type: none; display: inline-block;	margin-right: 20px;
+}
+
+#content-copy{ 
+	background: -moz-linear-gradient(top, #fff 0%, #BFDCEB 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #BFDCEB));
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#BFDCEB', GradientType=0 );
+	padding: 40px;
+	
+	-webkit-box-shadow: 0px 0px 10px #000000;
+	-moz-box-shadow: 0px 0px 10px #000000;
+	box-shadow: 0px 0px 10px #000000;
+	
+	border-radius: 10px;
+  moz-border-radius: 10px;
+	}
+	
+#content-copy h3 {
+	border-bottom: 1px solid #666;
+	font-size: 24px;
+}
+	
+#content-copy img {
+  padding: 9px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin: 20px;
+}
+
+#content-copy img.left {
+	margin-left: 0;
+}
+
+#content-copy img.right {
+	margin-right: 0;
 }

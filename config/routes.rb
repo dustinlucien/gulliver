@@ -1,4 +1,12 @@
 Gulliver::Application.routes.draw do
+  match '/why-use-our-service', :to => 'pages#about'
+  
+  match '/instructions-for-taking-passport-photos', :to => 'pages#howto'
+
+  match '/contact', :to => 'pages#contact'
+
+  root :to => 'pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
