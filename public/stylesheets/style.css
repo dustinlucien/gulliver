@@ -12,11 +12,17 @@ body {
 /******************
 Layout
 ******************/
-
-#headline {
-	clear: both;	
+#container {
+  text-align: center;
 }
 
+#wrapper {
+   text-align: left;
+   width: 640px;
+   margin-left: auto;
+   margin-right: auto;
+}
+   
 div.ui-tabs-panel {
 	-moz-border-radius-topleft: 0px;
   -moz-border-radius-topright: 0px;
@@ -32,12 +38,11 @@ div.ui-tabs-panel {
 	-webkit-box-shadow: 0px 0px 10px #000000;
 	-moz-box-shadow: 0px 0px 10px #000000;
 	box-shadow: 0px 0px 10px #000000;
-	padding: 40px;
 }
 
 div.ui-tabs .ui-tabs-hide { display: none !important; }
 
-div.ui-tabs li {list-style-type: none; margin: 0; }
+div.ui-tabs li {list-style-type: none;}
 /******************
 Type
 ******************/
@@ -72,7 +77,6 @@ Navigation
 ******************/
 
 div.ui-tabs {
-	display: block;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	
@@ -81,27 +85,19 @@ div.ui-tabs {
 	box-shadow: 0px 0px 10px #000000;
 	background-color: #ff1a00;
 	clear: both;
-	
-
 }
 
 ul.ui-tabs-nav li {
-	float: left;
-	font-size: 10px;
 	-moz-border-radius-topleft: 10px;
 	border-top-left-radius: 10px;
 	-moz-border-radius-topright: 10px;
 	border-top-right-radius: 10px;
 }
 ul.ui-tabs-nav li a {
-	display: block;
-	width: 204px;
-	
 	text-decoration: none;
 	color: #fff;
-	padding: 10px;
-	height: 50px;
 }
+
 ul.ui-tabs-nav li.ui-state-hover a {
 	background: #C40000; /* old browsers */
 	background: #FF1A00; /* old browsers */
@@ -126,8 +122,6 @@ ul.ui-tabs-nav li.ui-state-active a {
 }
 /* IE doesn't support selectors so can't do last-child */
 
-
-
 ul.ui-tabs-nav li#last a {
 	-moz-border-radius-topright: 10px;
 	border-top-right-radius: 10px;
@@ -138,8 +132,6 @@ ul.ui-tabs-nav li#first a {
 }
 ul.ui-tabs-nav li a strong {
 	text-transform: uppercase;
-	display: block;
-	margin-bottom: 10px;
 	font-size: 14px;
 }
 
@@ -204,7 +196,7 @@ input.field:focus, input.focused { border-color: #000; color: #333; }
 	margin-bottom: 20px;
 }
 
-ul#footer {
+#footer ul {
   margin: 0;
   padding: 0;
   border-radius: 10px;
@@ -219,7 +211,7 @@ ul#footer {
 	box-shadow: 0px 0px 10px #000000;
 }
 
-ul#footer li {list-style-type: none; display: inline-block;	margin-right: 20px;
+#footer li {list-style-type: none; display: inline-block;	margin-right: 20px;
 }
 
 #content-copy{ 
