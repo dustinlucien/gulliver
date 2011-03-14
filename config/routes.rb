@@ -1,5 +1,5 @@
 Gulliver::Application.routes.draw do
-  match '/why-use-our-service', :to => 'pages#about'
+  match '/why-use-our-passport-photos-service', :to => 'pages#about'
   
   match '/instructions-for-taking-passport-photos', :to => 'pages#howto'
 
