@@ -8,12 +8,14 @@ body {
 	background-repeat: no-repeat;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	height: 100%;
+	padding-bottom: 20px;
 }
 /******************
 Layout
 ******************/
 #container {
   text-align: center;
+
 }
 
 #wrapper {
@@ -29,11 +31,18 @@ Type
 
 h1 {
 	text-shadow: 2px 2px 3px #666;
-	filter: dropshadow(color=#666, offx=2, offy=2);
 	font-size: 24px;
 	color: #3b5b8f;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+#header span
+{
+  background: url(/images/getpassportphoto_logo.png) no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 h2 {
@@ -78,7 +87,7 @@ ul.ui-tabs-nav li {
 	text-align: center;
 	color: #FFFFFF;
 	padding-top: 5px;
-	padding-bottom: 13px;
+	padding-bottom: 12px;
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -114,6 +123,10 @@ ul.ui-tabs-nav li strong {
 	text-transform: uppercase;
 }
 
+ul.ui-tabs-nav li {
+	background-color: #FF1A00;
+}
+
 ul.ui-tabs-nav li.ui-state-hover {
 	background: #C40000; /* old browsers */
 	background: #FF1A00; /* old browsers */
@@ -126,7 +139,6 @@ ul.ui-tabs-nav li.ui-state-active {
 	background: #FFFFFF; /* old browsers */
 	background: -moz-linear-gradient(top, #FFFFFF 0%, #fff 100%); /* firefox */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFFFFF), color-stop(100%, #fff)); /* webkit */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#fff', GradientType=0 ); /* ie */
 	-moz-border-radius-topleft: 10px;
 	-moz-border-radius-topright: 10px;
 	-moz-border-radius-bottomright: 0px;
@@ -136,12 +148,19 @@ ul.ui-tabs-nav li.ui-state-active {
 	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 0px;
 	color: #666;
+	position: relative;
+	top: 1px;
+
 }
+
+
 
 ul.ui-tabs-nav li.ui-state-active a {
   color: #666;
 }
 /* IE doesn't support selectors so can't do last-child */
+
+
 
 
 div.ui-tabs-panel {
@@ -156,7 +175,6 @@ div.ui-tabs-panel {
   border-bottom-left-radius: 10px;
 	background: -moz-linear-gradient(top, #fff 0%, #BFDCEB 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #BFDCEB));
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#BFDCEB', GradientType=0 );
 	-webkit-box-shadow: 0px 0px 10px #000000;
 	-moz-box-shadow: 0px 0px 10px #000000;
 	box-shadow: 0px 0px 10px #000000;
@@ -172,22 +190,24 @@ div.ui-tabs li {list-style-type: none;}
 }
 
 #footer ul {
+display: block;
   margin: 0px;
   padding: 20px;
    
   border-radius: 10px;
-  moz-border-radius: 10px;
-
+  -moz-border-radius: 10px;
+	background-color: #fff;
 	background: -moz-linear-gradient(top, #fff 0%, #BFDCEB 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #BFDCEB));
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#BFDCEB', GradientType=0 );
 
 	-webkit-box-shadow: 0px 0px 10px #000000;
 	-moz-box-shadow: 0px 0px 10px #000000;
 	box-shadow: 0px 0px 10px #000000;
+	height: 20px;
+	text-align: center;
 }
 
-#footer li { list-style-type: none; display: inline-block;	margin-right: 20px; }
+#footer li { list-style-type: none; display: block;	float: left; margin-right: 20px; }
 
 #content-copy { 
 	background: -moz-linear-gradient(top, #fff 0%, #BFDCEB 100%);
