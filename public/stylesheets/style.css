@@ -37,6 +37,13 @@ h1 {
 	margin-bottom: 20px;
 }
 
+#header
+{
+  width: 400px;
+  height: 101px;
+  position: relative;
+}
+
 #header span
 {
   background: url(/images/getpassportphoto_logo.png) no-repeat;
@@ -96,8 +103,6 @@ ul.ui-tabs-nav li a {
 	text-decoration: none;
 	color: #FFFFFF;
 	font-size: 1.3em;
-  padding-top: 5px;
-  padding-bottom: 13px;
 }
 
 ul.ui-tabs-nav li#last {
