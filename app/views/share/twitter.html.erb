@@ -1,0 +1,20 @@
+<% content_for :head do %>
+  <%= javascript_include_tag "http://platform.twitter.com/anywhere.js?id=" + app.config.twitter.api_key + "&v=1" %>
+<% end %>
+
+<h1>Share#twitter</h1>
+<p>Find me in app/views/share/twitter.html.erb</p>
+<div id="tbox"></div>
+<script type="text/javascript">
+
+  twttr.anywhere(function (T) {
+
+    T("#tbox").tweetBox({
+      height: 100,
+      width: 400,
+      defaultContent: "<YOUR DEFAULT TWEETBOX CONTENT HERE>"
+    });
+
+  });
+
+</script>

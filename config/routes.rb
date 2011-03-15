@@ -1,4 +1,8 @@
 Gulliver::Application.routes.draw do
+  get "share/twitter"
+
+  get "share/facebook"
+
   match '/why-use-our-passport-photos-service', :to => 'pages#about'
   
   match '/instructions-for-taking-passport-photos', :to => 'pages#howto'
