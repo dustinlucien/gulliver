@@ -29,26 +29,29 @@ Layout
 Type
 ******************/
 
-h1 {
+h1#header {
   height: 101px;
     width: 400px;
   height: 101px;
     background: url(/images/getpassportphoto_logo.png) no-repeat;
+    margin-top: 20px;
 
 }
 
 
-#header span
+h1#header span
 {
 	display: none;
 }
 
-h2 {
+h2#tagline {
 	font-size: 18px;
   top: 24px;
   margin-bottom: 20px;
 }
 
+h3#subhead {font-size: 16px;
+	}
 a {
 	text-decoration: none;
 	color: #3b5b8f;
