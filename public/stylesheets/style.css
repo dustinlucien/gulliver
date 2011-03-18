@@ -30,24 +30,17 @@ Type
 ******************/
 
 h1 {
-  text-indent: -99999px;
-  width: 400px;
   height: 101px;
+    width: 400px;
+  height: 101px;
+    background: url(/images/getpassportphoto_logo.png) no-repeat;
+
 }
 
-#header
-{
-  width: 400px;
-  height: 101px;
-  position: relative;
-}
 
 #header span
 {
-  background: url(/images/getpassportphoto_logo.png) no-repeat;
-  position: absolute;
-  width: 100%;
-  height: 100%;
+	display: none;
 }
 
 h2 {
