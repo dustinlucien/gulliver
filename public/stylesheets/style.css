@@ -30,11 +30,9 @@ Type
 ******************/
 
 h1 {
-	text-shadow: 2px 2px 3px #666;
-	font-size: 24px;
-	color: #3b5b8f;
-	margin-top: 20px;
-	margin-bottom: 20px;
+  text-indent: -99999px;
+  width: 400px;
+  height: 101px;
 }
 
 #header
