@@ -24,48 +24,45 @@ Layout
    margin-left: auto;
    margin-right: auto;
 }
-   
+
 /******************
 Type
 ******************/
 
-h1 {
-	text-shadow: 2px 2px 3px #666;
-	font-size: 24px;
-	color: #3b5b8f;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-#header
-{
-  width: 400px;
+h1#header {
   height: 101px;
-  position: relative;
+    width: 400px;
+  height: 101px;
+    background: url(/images/getpassportphoto_logo.png) no-repeat;
+    margin-top: 20px;
+
 }
 
-#header span
+
+h1#header span
 {
-  background: url(/images/getpassportphoto_logo.png) no-repeat;
-  position: absolute;
-  width: 100%;
-  height: 100%;
+	display: none;
+	text-align: center;
 }
 
-h2 {
+h2#tagline {
 	font-size: 18px;
   top: 24px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
+h3#subhead {font-size: 16px;
+	}
 a {
 	text-decoration: none;
 	color: #3b5b8f;
+	text-align: center;
 }
 
 p {
 	line-height: 20px;
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
 }
 
 /******************
@@ -73,13 +70,15 @@ Navigation
 ******************/
 
 div.ui-tabs {
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	-webkit-box-shadow: 0px 0px 10px #000000;
-	-moz-box-shadow: 0px 0px 10px #000000;
-	box-shadow: 0px 0px 10px #000000;
-	background-color: #ff1a00;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px #000000;
+    -moz-box-shadow: 0px 0px 10px #000000;
+    box-shadow: 0px 0px 10px #000000;
+    background-color: #ff1a00;
 }
+
+
 
 ul.ui-tabs-nav {
   padding-left: 0px;
@@ -87,8 +86,8 @@ ul.ui-tabs-nav {
 }
 
 ul.ui-tabs-nav li {
-	-moz-border-radius-topleft: 10px;
-	border-top-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    border-top-left-radius: 10px;
 	-moz-border-radius-topright: 10px;
 	border-top-right-radius: 10px;
 	text-align: center;
@@ -198,7 +197,7 @@ div.ui-tabs li {list-style-type: none;}
 display: block;
   margin: 0px;
   padding: 20px;
-   
+
   border-radius: 10px;
   -moz-border-radius: 10px;
 	background-color: #fff;
@@ -214,25 +213,25 @@ display: block;
 
 #footer li { list-style-type: none; display: block;	float: left; margin-right: 20px; }
 
-#content-copy { 
+#content-copy {
 	background: -moz-linear-gradient(top, #fff 0%, #BFDCEB 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #BFDCEB));
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#BFDCEB', GradientType=0 );
 	padding: 40px;
-	
+
 	-webkit-box-shadow: 0px 0px 10px #000000;
 	-moz-box-shadow: 0px 0px 10px #000000;
 	box-shadow: 0px 0px 10px #000000;
-	
+
 	border-radius: 10px;
   moz-border-radius: 10px;
 }
-	
+
 #content-copy h3 {
 	border-bottom: 1px solid #666;
 	font-size: 24px;
 }
-	
+
 #content-copy img {
   padding: 9px;
   background-color: #fff;
@@ -247,3 +246,7 @@ display: block;
 #content-copy img.right {
 	margin-right: 0;
 }
+
+div#tabs-1 {background-color:#fff;}
+div#tabs-2 {background-color:#fff;}
+div#tabs-3 {background-color:#fff;}

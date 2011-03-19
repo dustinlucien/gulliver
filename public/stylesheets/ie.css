@@ -1,0 +1,10 @@
+ul.ui-tabs-nav li {
+	color: #fff;
+	}
+	
+	/* Background for IE */
+
+
+div#tabs-1 {background-image: url(/images/ie-content_background.png);background-position: bottom; background-repeat: repeat-x;}
+div#tabs-2 {background-color:#fff;background-image: url(/images/ie-content_background.png);background-position: bottom; background-repeat: repeat-x;}
+div#tabs-3 {background-color:#fff;background-image: url(/images/ie-content_background.png);background-position: bottom;background-repeat: repeat-x;}
