@@ -42,12 +42,14 @@ h1#header {
 h1#header span
 {
 	display: none;
+	text-align: center;
 }
 
 h2#tagline {
 	font-size: 18px;
   top: 24px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 h3#subhead {font-size: 16px;
@@ -55,6 +57,7 @@ h3#subhead {font-size: 16px;
 a {
 	text-decoration: none;
 	color: #3b5b8f;
+	text-align: center;
 }
 
 p {
@@ -75,9 +78,7 @@ div.ui-tabs {
     background-color: #ff1a00;
 }
 
-div#tabs-1 {background-color:#fff;}
-div#tabs-2 {background-color:#fff;}
-div#tabs-3 {background-color:#fff;}
+
 
 ul.ui-tabs-nav {
   padding-left: 0px;
@@ -246,3 +247,6 @@ display: block;
 	margin-right: 0;
 }
 
+div#tabs-1 {background-color:#fff;}
+div#tabs-2 {background-color:#fff;}
+div#tabs-3 {background-color:#fff;}
