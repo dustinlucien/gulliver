@@ -1,0 +1,29 @@
+development:
+  twitter.api_key: "kCiElGQ1u9ZNTba5rNuWQ"
+  twitter.oauth.oauth_token: "262460865-dM3pVstPk2f2uBTfHsYMnOHeDQWnNqgRXdsvRjKo"
+  twitter.oauth.oauth_token_secret: "BJ7iyVV2W9tGPjYiW6FqrdT5gDdKEYg7Hm6mbIc5oc"
+  twitter.oauth.consumer_key: "kCiElGQ1u9ZNTba5rNuWQ"
+  twitter.oauth.consumer_secret: "Rc144uwbnQXAC33RSXDXxYRHWHuS0Ygg7iDJXI2m4"
+  twitter.oauth.request_token_url: "https://api.twitter.com/oauth/request_token"
+  twitter.oauth.access_token_url: "https://api.twitter.com/oauth/access_token"
+  twitter.oauth.authorize_url: "https://api.twitter.com/oauth/authorize"
+  
+test:
+  twitter.api_key: "kCiElGQ1u9ZNTba5rNuWQ"
+  twitter.oauth.oauth_token: "262460865-dM3pVstPk2f2uBTfHsYMnOHeDQWnNqgRXdsvRjKo"
+  twitter.oauth.oauth_token_secret: "BJ7iyVV2W9tGPjYiW6FqrdT5gDdKEYg7Hm6mbIc5oc"
+  twitter.oauth.consumer_key: "kCiElGQ1u9ZNTba5rNuWQ"
+  twitter.oauth.consumer_secret: "Rc144uwbnQXAC33RSXDXxYRHWHuS0Ygg7iDJXI2m4"
+  twitter.oauth.request_token_url: "https://api.twitter.com/oauth/request_token"
+  twitter.oauth.access_token_url: "https://api.twitter.com/oauth/access_token"
+  twitter.oauth.authorize_url: "https://api.twitter.com/oauth/authorize"
+  
+production:
+  twitter.api_key: "kCiElGQ1u9ZNTba5rNuWQ"
+  twitter.oauth.oauth_token: "262460865-dM3pVstPk2f2uBTfHsYMnOHeDQWnNqgRXdsvRjKo"
+  twitter.oauth.oauth_token_secret: "BJ7iyVV2W9tGPjYiW6FqrdT5gDdKEYg7Hm6mbIc5oc"
+  twitter.oauth.consumer_key: "kCiElGQ1u9ZNTba5rNuWQ"
+  twitter.oauth.consumer_secret: "Rc144uwbnQXAC33RSXDXxYRHWHuS0Ygg7iDJXI2m4"
+  twitter.oauth.request_token_url: "https://api.twitter.com/oauth/request_token"
+  twitter.oauth.access_token_url: "https://api.twitter.com/oauth/access_token"
+  twitter.oauth.authorize_url: "https://api.twitter.com/oauth/authorize"

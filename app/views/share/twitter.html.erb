@@ -1,10 +1,12 @@
 <% content_for :head do %>
-  <%= javascript_include_tag "http://platform.twitter.com/anywhere.js?id=" + app.config.twitter.api_key + "&v=1" %>
+  <%= javascript_include_tag "http://platform.twitter.com/anywhere.js?id=" + @api_key + "&v=1" %>
 <% end %>
 
+<div id="content-copy" class="span-14 last">
 <h1>Share#twitter</h1>
 <p>Find me in app/views/share/twitter.html.erb</p>
 <div id="tbox"></div>
+</div>
 <script type="text/javascript">
 
   twttr.anywhere(function (T) {

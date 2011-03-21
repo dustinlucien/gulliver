@@ -22,15 +22,5 @@ Gulliver::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
-  
-  config.twitter.api_key = "kCiElGQ1u9ZNTba5rNuWQ"
-  config.twitter.oauth.oauth_token = "262460865-dM3pVstPk2f2uBTfHsYMnOHeDQWnNqgRXdsvRjKo"
-  config.twitter.oauth.oauth_token_secret = "BJ7iyVV2W9tGPjYiW6FqrdT5gDdKEYg7Hm6mbIc5oc"
-  config.twitter.oauth.consumer_key = "kCiElGQ1u9ZNTba5rNuWQ"
-  config.twitter.oauth.consumer_secret = "Rc144uwbnQXAC33RSXDXxYRHWHuS0Ygg7iDJXI2m4"
-  config.twitter.oauth.request_token_url = "https://api.twitter.com/oauth/request_token"
-  config.twitter.oauth.access_token_url = "https://api.twitter.com/oauth/access_token"
-  config.twitter.oauth.authorize_url = "https://api.twitter.com/oauth/authorize"
-  
 end
 

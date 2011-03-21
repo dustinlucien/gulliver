@@ -3,6 +3,8 @@ Gulliver::Application.routes.draw do
 
   get "share/facebook"
 
+  match '/privacy', :to => 'pages#privacy'
+  
   match '/why-use-our-passport-photos-service', :to => 'pages#about'
   
   match '/instructions-for-taking-passport-photos', :to => 'pages#howto'
