@@ -1,21 +1,21 @@
 class PagesController < ApplicationController
   def home
-    @title = "GetPassportPhotos.com - Printed Passport Photos, Visa Photos, and ID Photos"
+    @title = "Get your passport photos online - Passport Photos, Visa Photos, and ID Photos"
   end
 
   def about
-    @title = "GetPassportPhotos.com - Printed Passport Photos - Why use our service?"
+    @title = "Get your passport photos online - Passport Photos, Visa Photos, and ID Photos - Why use our service?"
   end
 
   def contact
-    @title = "GetPassportPhotos.com - Printed Passport Photos - How can we help?"
+    @title = "Get your passport photos online - Passport Photos, Visa Photos, and ID Photos - How can we help?"
   end
 
   def howto
-    @title = "GetPassportPhotos.com - Printed Passport Photos - Instructions on taking the perfect passport photo"
+    @title = "Get your passport photos online - Passport Photos, Visa Photos, and ID Photos - Instructions on taking the perfect passport photo"
   end
 
   def privacy
-    @title = "GetPassportPhotos.com - Printed Passport Photos - Privacy Policy"
+    @title = "Get your passport photos online - Passport Photos, Visa Photos, and ID Photos - Privacy Policy"
   end
 end
