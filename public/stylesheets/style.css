@@ -139,7 +139,6 @@ ul.ui-tabs-nav li.ui-state-hover {
 	background: #FF1A00; /* old browsers */
 	background: -moz-linear-gradient(top, #FF1A00 13%, #770000 100%); /* firefox */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(13%, #FF1A00), color-stop(100%, #770000)); /* webkit */
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF1A00', endColorstr='#770000', GradientType=0 ); /* ie */
 }
 
 ul.ui-tabs-nav li.ui-state-active {
@@ -164,6 +163,10 @@ ul.ui-tabs-nav li.ui-state-active {
 
 ul.ui-tabs-nav li.ui-state-active a {
   color: #666;
+}
+
+ul.ui-tabs-nav li.ui-state-active a:hover {
+	color: #ccc;
 }
 /* IE doesn't support selectors so can't do last-child */
 
