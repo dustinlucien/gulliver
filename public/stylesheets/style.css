@@ -228,6 +228,7 @@ display: block;
 
 	border-radius: 10px;
   moz-border-radius: 10px;
+  background-color:#fff;
 }
 
 #content-copy h3 {
