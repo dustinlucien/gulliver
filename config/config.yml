@@ -7,7 +7,7 @@ development:
   twitter.oauth.request_token_url: "https://api.twitter.com/oauth/request_token"
   twitter.oauth.access_token_url: "https://api.twitter.com/oauth/access_token"
   twitter.oauth.authorize_url: "https://api.twitter.com/oauth/authorize"
-  
+
 test:
   twitter.api_key: "kCiElGQ1u9ZNTba5rNuWQ"
   twitter.oauth.oauth_token: "262460865-dM3pVstPk2f2uBTfHsYMnOHeDQWnNqgRXdsvRjKo"
@@ -17,7 +17,7 @@ test:
   twitter.oauth.request_token_url: "https://api.twitter.com/oauth/request_token"
   twitter.oauth.access_token_url: "https://api.twitter.com/oauth/access_token"
   twitter.oauth.authorize_url: "https://api.twitter.com/oauth/authorize"
-  
+
 production:
   twitter.api_key: "kCiElGQ1u9ZNTba5rNuWQ"
   twitter.oauth.oauth_token: "262460865-dM3pVstPk2f2uBTfHsYMnOHeDQWnNqgRXdsvRjKo"
@@ -27,3 +27,4 @@ production:
   twitter.oauth.request_token_url: "https://api.twitter.com/oauth/request_token"
   twitter.oauth.access_token_url: "https://api.twitter.com/oauth/access_token"
   twitter.oauth.authorize_url: "https://api.twitter.com/oauth/authorize"
+
