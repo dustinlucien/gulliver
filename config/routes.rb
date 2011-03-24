@@ -1,15 +1,16 @@
 Gulliver::Application.routes.draw do
-  get "share/twitter"
-
-  get "share/facebook"
+  #match 'share/twitter/:username', :to => 'share#twitter'
+  #match 'share/twitter', :to => 'share#twitter'
+  get 'share/twitter'
+  #get 'share/facebook'
 
   match '/privacy', :to => 'pages#privacy'
   
-  match '/why-use-our-passport-photos-service', :to => 'pages#about'
+  match '/why-use-our-passport-photos-service', :to => 'pages#about', :as => :about
   
-  match '/instructions-for-taking-passport-photos', :to => 'pages#howto'
+  match '/instructions-for-taking-passport-photos', :to => 'pages#howto', :as => :howto
 
-  match '/contact', :to => 'pages#contact'
+  match '/contact', :to => 'pages#contact', :as => :contact
 
   root :to => 'pages#home'
 

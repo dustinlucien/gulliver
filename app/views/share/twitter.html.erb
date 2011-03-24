@@ -23,7 +23,11 @@
     able to process your pictures until this step is completed.
   </p>
   <div id="pay-with-tweet-button">
-    <a href="http://twitter.com/share?url=http://bit.ly/pssprtphotos&text=I%20just%20paid%20for%20my%20passport%20photos%20with%20a%20tweet%20from%20@getpssprtphotos&related=getpssprtphotos" ></a>
+    <% if @twitter_username == nil %>
+      <a href="http://twitter.com/share?url=http://bit.ly/pssprtphotos&text=I%20just%20paid%20for%20my%20passport%20photos%20with%20a%20tweet%20from%20@getpssprtphotos&related=getpssprtphotos" ></a>
+    <% else %>
+      <a href="http://twitter.com/share?via=<%= @twitter_username %>&url=http://bit.ly/pssprtphotos&text=I%20just%20paid%20for%20my%20passport%20photos%20with%20a%20tweet%20from%20@getpssprtphotos&related=getpssprtphotos" ></a>
+    <% end %>
   </div>
   <p>
     If you've changed your mind, and would rather pay for the photo layout and
