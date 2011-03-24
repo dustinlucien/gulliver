@@ -2,21 +2,34 @@
   <%= javascript_include_tag "http://platform.twitter.com/anywhere.js?id=" + @api_key + "&v=1" %>
 <% end %>
 
+<style type="text/css" media="screen">
+
+  #pay-with-tweet-button a {
+    display: block;
+    background: transparent url('/images/tweet.png') center no-repeat;
+    cursor: pointer;
+    padding: 60px;
+  }
+  
+</style>
+
 <div id="content-copy" class="span-14 last">
-<h1>Share#twitter</h1>
-<p>Find me in app/views/share/twitter.html.erb</p>
-<div id="tbox"></div>
+  <h1>Thank You For Your Purchase</h1>
+  <h2>You chose to Pay with a Tweet</h2>
+  <p>
+    You should have already received a confirmation email from us. Since you've
+    elected to Pay with a Tweet, just click the button below and you will be
+    redirected to the Twitter website to complete your payment. We will not be
+    able to process your pictures until this step is completed.
+  </p>
+  <div id="pay-with-tweet-button">
+    <a href="http://twitter.com/share?url=http://bit.ly/pssprtphotos&text=I%20just%20paid%20for%20my%20passport%20photos%20with%20a%20tweet%20from%20@getpssprtphotos&related=getpssprtphotos" ></a>
+  </div>
+  <p>
+    If you've changed your mind, and would rather pay for the photo layout and
+    verification, you can return to the homepage and repeat your previous steps
+    and select the $1.99 payment option instead, or you may email us at <a
+    href="mailto:support@getpassportphotos.com">support@getpassportphotos.com</a>.
+  </p>
+
 </div>
-<script type="text/javascript">
-
-  twttr.anywhere(function (T) {
-
-    T("#tbox").tweetBox({
-      height: 100,
-      width: 400,
-      defaultContent: "<YOUR DEFAULT TWEETBOX CONTENT HERE>"
-    });
-
-  });
-
-</script>
