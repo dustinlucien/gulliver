@@ -1,7 +1,6 @@
 <% content_for :head do %>
   <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js" %>
   <script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
-  <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
 <% end %>
 
 <div id="tabs" class="span-16 last">
@@ -49,10 +48,14 @@
       r7x3q1.display();
     </script>
 	</div>
+	<!--
 	<div id="fb-like-box">
 	  <fb:like-box href="http://www.facebook.com/pages/GetPassportPhotoscom/201382773224772" width="295" show_faces="false" stream="false" header="true"></fb:like-box>
   </div>
+  -->
+  <%= render 'layouts/bonified' %>
 </div>
+
 <script type="text/javascript">
 
   $(document).ready(function() {

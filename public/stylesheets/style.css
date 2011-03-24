@@ -89,8 +89,8 @@ ul.ui-tabs-nav {
 }
 
 ul.ui-tabs-nav li {
-    -moz-border-radius-topleft: 10px;
-    border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
 	-moz-border-radius-topright: 10px;
 	border-top-right-radius: 10px;
 	text-align: center;
@@ -200,7 +200,7 @@ div.ui-tabs li {list-style-type: none;}
 }
 
 #footer ul {
-display: block;
+  display: block;
   margin: 0px;
   padding: 20px;
 
@@ -217,7 +217,7 @@ display: block;
 	text-align: center;
 }
 
-#footer li { list-style-type: none; display: block;	float: left; margin-right: 20px; }
+#footer li { list-style-type: none; display: block;	float: left; margin-right: 20px;}
 
 #content-copy {
 	background: -moz-linear-gradient(top, #fff 0%, #BFDCEB 100%);
@@ -256,3 +256,11 @@ display: block;
 div#tabs-1 {background-color:#fff;}
 div#tabs-2 {background-color:#fff;}
 div#tabs-3 {background-color:#fff;}
+
+#visa-image {
+  padding-top: 19px;
+}
+
+#twitter-small img {
+  padding-top: 1px;
+}
