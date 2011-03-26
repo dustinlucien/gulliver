@@ -12,6 +12,8 @@ Gulliver::Application.routes.draw do
 
   match '/contact', :to => 'pages#contact', :as => :contact
 
+  match '/thank-you', :to => 'pages#thankyou', :as => :thankyou
+  
   root :to => 'pages#home'
 
   # The priority is based upon order of creation:

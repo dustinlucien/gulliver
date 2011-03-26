@@ -42,7 +42,7 @@ h1#header span {
 
 h2#tagline {
   text-align: center;
-	font-size: 40px;
+	font-size: 35px;
 	color: black;
 	font-weight: bold;
 	letter-spacing: -0.7px;
@@ -80,8 +80,6 @@ div.ui-tabs {
     box-shadow: 0px 0px 10px #000000;
     background-color: #ff1a00;
 }
-
-
 
 ul.ui-tabs-nav {
   padding-left: 0px;
@@ -159,8 +157,6 @@ ul.ui-tabs-nav li.ui-state-active {
 
 }
 
-
-
 ul.ui-tabs-nav li.ui-state-active a {
   color: #666;
 }
@@ -169,9 +165,6 @@ ul.ui-tabs-nav li.ui-state-active a:hover {
 	color: #ccc;
 }
 /* IE doesn't support selectors so can't do last-child */
-
-
-
 
 div.ui-tabs-panel {
   padding-top: 40px;
@@ -258,7 +251,7 @@ div#tabs-2 {background-color:#fff;}
 div#tabs-3 {background-color:#fff;}
 
 #visa-image {
-  padding-top: 19px;
+  padding-top: 10px;
 }
 
 #twitter-small img {

@@ -18,4 +18,9 @@ class PagesController < ApplicationController
   def privacy
     @title = "Privacy Policy | We take your privacy seriously"
   end
+  
+  def thankyou
+    @title = "Thank you for your business"
+  end
+  
 end
