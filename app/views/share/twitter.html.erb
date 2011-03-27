@@ -6,7 +6,7 @@
 
   #pay-with-tweet-button a {
     display: block;
-    background: transparent url('/images/tweet.png') center no-repeat;
+    background: transparent url('/images/pay-with-a-tweet.png') center no-repeat;
     cursor: pointer;
     padding: 60px;
   }
@@ -14,15 +14,8 @@
 </style>
 
 <div id="content-copy" class="span-14 last">
-  <h1>Thank you for your purchase</h1>
-  <h2>You chose to Pay with a Tweet</h2>
-  <p>
-    You should have already received a confirmation email from us for you
-    purchase. Since you've elected to pay with a tweet, just <strong>press the
-    big Tweet button below</strong> and you will be redirected to the Twitter
-    website to complete your payment. We will not be able to process your
-    pictures until this step is completed.
-  </p>
+  <h1>You're almost done</h1>
+  <h2>Click the Pay with a Tweet button below</h2>
   <div id="pay-with-tweet-button">
     <% if @twitter_username == nil %>
       <a href="http://twitter.com/share?url=http://bit.ly/pssprtphotos&text=I%20just%20paid%20for%20my%20passport%20photos%20with%20a%20tweet%20from%20@getpssprtphotos&related=getpssprtphotos" target="_blank"></a>
@@ -30,11 +23,20 @@
       <a href="http://twitter.com/share?via=<%= @twitter_username %>&url=http://bit.ly/pssprtphotos&text=I%20just%20paid%20for%20my%20passport%20photos%20with%20a%20tweet%20from%20@getpssprtphotos&related=getpssprtphotos" target="_blank"></a>
     <% end %>
   </div>
-  <p>
-    If you've changed your mind, and would rather pay for the photo layout and
-    verification, you can return to the homepage to repeat your previous steps
-    and select the $1.99 payment option instead, or you can contact 
-    <%= link_to "customer support", contact_path %> and we will send you a payment link.
-  </p>
-
+  <div>
+    <p class="notice">
+      You should have already received a confirmation email. <br/> Since
+      you elected to <strong>Pay with a Tweet</strong> we will not be able
+      to process your pictures until this step is completed.
+    </p>
+  </div>
+  <div>
+    <p class="info">
+      If you've changed your mind, and would rather pay for the photo layout
+      and verification, you can return to the homepage to repeat your previous
+      steps and select the $1.99 payment option instead, or contact <%=
+      link_to "customer support", contact_path %> and we will send you a
+      payment link.
+    </p>
+  </div>
 </div>
