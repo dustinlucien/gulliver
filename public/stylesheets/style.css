@@ -210,7 +210,7 @@ div.ui-tabs li {list-style-type: none;}
 	text-align: center;
 }
 
-#footer li { list-style-type: none; display: block;	float: left; margin-right: 20px;}
+#footer li { list-style-type: none; display: block;	float: left; margin-right: 20px; text-align:center;}
 
 #content-copy {
 	background: -moz-linear-gradient(top, #fff 0%, #BFDCEB 100%);
