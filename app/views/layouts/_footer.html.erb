@@ -12,16 +12,17 @@
 <div id="fb-root"></div>
 
 <script>
- window.fbAsyncInit = function() {
+  window.fbAsyncInit = function() {
      FB.init({
+       appId  : '201382773224772',
        status : true, // check login status
        cookie : true, // enable cookies to allow the server to access the session
        xfbml  : true,  // parse XFBML
-       channelUrl  : <%= '\''+ request.protocol + request.host_with_port + root_path + 'channel.html' + '\'' %> // custom channel
+       channelUrl : <%= '\''+ request.protocol + request.host_with_port + root_path + 'channel.html' + '\'' %> // custom channel
      });
   };
 
-   (function() {
+  (function() {
      var e = document.createElement('script');
      e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
      e.async = true;
