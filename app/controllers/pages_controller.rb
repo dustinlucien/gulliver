@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    @title = "Get your passport photos online"
+    @title = "Print or Mail Order Your Passport Photos, Visa Photos, ID Photos, Greencard Photos"
   end
 
   def about
@@ -12,11 +12,15 @@ class PagesController < ApplicationController
   end
 
   def howto
-    @title = "How to take perfect passport photo"
+    @title = "Instructions | How to take perfect passport photo"
   end
 
   def privacy
     @title = "Privacy Policy | We take your privacy seriously"
+  end
+  
+  def sitemap
+    @title = "Sitemap"
   end
   
   def thankyou

@@ -14,6 +14,8 @@ Gulliver::Application.routes.draw do
 
   match '/thank-you', :to => 'pages#thankyou', :as => :thankyou
   
+  match '/sitemap', :to => 'pages#sitemap', :as => :sitemap
+  
   root :to => 'pages#home'
 
   # The priority is based upon order of creation:

@@ -3,3 +3,22 @@
 # To ban all spiders from the entire site uncomment the next two lines:
 # User-Agent: *
 # Disallow: /
+User-agent: Mediapartners-Google
+Crawl-delay: 15
+
+User-agent: Googlebot
+Crawl-delay: 15
+
+User-agent: Slurp
+Crawl-delay: 15
+
+User-agent: Yahoo-NewsCrawler
+Crawl-delay: 15
+
+User-Agent: msnbot
+Crawl-delay: 15
+
+User-agent: *
+Crawl-delay: 15
+
+Sitemap: http://www.getpassportphotos.com/sitemap.xml

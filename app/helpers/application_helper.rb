@@ -1,6 +1,6 @@
 module ApplicationHelper
   def title
-    base_title = "GetPassportPhotos.com - Passport Photos, Visa Photos, ID Photos and Greencard Photos"
+    base_title = "Get Passport Photos Online"
     if @title.nil?
       base_title
     else
