@@ -2,19 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>http://www.getpassportphotos.com</loc>
-      <lastmod>2011-04-01</lastmod>
-      <changefreq>weekly</changefreq>
+      <changefreq>daily</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
       <loc>http://www.getpassportphotos.com/why-use-our-passport-photos-service</loc>
-      <lastmod>2011-04-01</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
    </url>
    <url>
       <loc>http://www.getpassportphotos.com/instructions-for-taking-passport-photos</loc>
-      <lastmod>2011-04-01</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
@@ -29,5 +26,11 @@
       <lastmod>2011-04-01</lastmod>
       <changefreq>yearly</changefreq>
       <priority>0.3</priority>
-   </url>   
+   </url>  
+   <url>
+      <loc>http://www.getpassportphotos.com/sitemap</loc>
+      <lastmod>2011-04-01</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.3</priority>
+   </url>
 </urlset>
