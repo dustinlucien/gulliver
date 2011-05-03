@@ -12,7 +12,7 @@ class PagesController < ApplicationController
   end
 
   def howto
-    @title = "Instructions | How to take perfect passport photo"
+    @title = "Instructions | How to take perfect passport photos"
   end
 
   def privacy

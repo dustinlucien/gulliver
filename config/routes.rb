@@ -4,18 +4,18 @@ Gulliver::Application.routes.draw do
   get 'share/twitter'
   #get 'share/facebook'
 
-  match '/privacy', :to => 'pages#privacy'
-  
+  match '/privacy', :to => 'pages#privacy', :as => :privacy
+
   match '/why-use-our-passport-photos-service', :to => 'pages#about', :as => :about
-  
-  match '/instructions-for-taking-passport-photos', :to => 'pages#howto', :as => :howto
+
+  match '/instructions-how-to-take-perfect-passport-photos', :to => 'pages#howto', :as => :howto
 
   match '/contact', :to => 'pages#contact', :as => :contact
 
   match '/thank-you', :to => 'pages#thankyou', :as => :thankyou
-  
+
   match '/sitemap', :to => 'pages#sitemap', :as => :sitemap
-  
+
   root :to => 'pages#home'
 
   # The priority is based upon order of creation:
@@ -75,3 +75,4 @@ Gulliver::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
 end
+
